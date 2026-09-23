@@ -6,21 +6,29 @@ To bypass this and give you full control over how loud your death songs are, thi
 
 ## 📥 Prerequisites 
 
-1. **Python:** You must have [Python installed](https://www.python.org/downloads/). *(Make sure to check the box that says "Add Python to PATH" during installation!)*
-2. **FFmpeg:** The tool requires `ffmpeg.exe` to process the audio. 
-   - Download the `ffmpeg.exe` file (you can find Windows builds [here](https://github.com/BtbN/FFmpeg-Builds/releases)).
-   - **Place `ffmpeg.exe` in the exact same folder** as this Volume Changer script.
+You need Python and FFmpeg installed on your computer. You can install both instantly using the Windows Command Prompt.
+
+**The Quick Install (Recommended):**
+1. Click your Windows Start button, type `cmd`, right-click **Command Prompt**, and select **Run as administrator**.
+2. Copy and paste this command and press Enter to install Python:
+   `winget install Python.Python.3.12`
+3. Copy and paste this command and press Enter to install FFmpeg:
+   `winget install Gyan.FFmpeg`
+4. *Restart your computer* if Windows doesn't register the new system paths.
+
+*(If you prefer not to use the command line, you can download [Python here](https://www.python.org/downloads/) and manually place [FFmpeg](https://github.com/BtbN/FFmpeg-Builds/releases) inside this tool's folder).*
 
 ## 🚀 How to Use
 
 1. Subscribe to the death song(s) you want on the Steam Workshop.
-2. Run **`Run_VolumeChanger.bat`**.
-3. Click **Browse**. **The tool will automatically locate your Project Zomboid Steam Workshop folder!** Just select the main folder of the mod you want to edit. *(It will also automatically scan through all internal subfolders to find the Build 41 and Build 42 audio files for you).*
-4. Adjust the slider to your desired volume:
+2. **Download this tool** (Click the green `<> Code` button at the top of this page -> **Download ZIP**) and **extract/unpack** the folder to anywhere on your computer. 
+3. Open the extracted folder and double-click **`Run_VolumeChanger.bat`**.
+4. Click **Browse**. **The tool will automatically locate your Project Zomboid Steam Workshop folder!** Just select the main folder of the mod you want to edit. *(It will automatically scan through all internal subfolders to find the Build 41 and Build 42 audio files for you).*
+5. Adjust the slider to your desired volume:
    * `-45`: Very quiet (Best for high-gain headphones).
-   * `-27`: Normal (Default Zomboid audio baseline).
+   * `-28`: Normal (Default Zomboid audio baseline).
    * `-12`: Extremely loud.
-5. Click **Apply Volume**.
+6. Click **Apply Volume**.
 
 > **💡 PRO TIP:** Don't launch the game to test the volume! Game engines lock audio files into memory while running. Instead, click the **"📁 Open Folder"** button to play the `.ogg` file in your standard Windows media player. You can quickly test and tweak the slider as many times as you need *before* booting up Project Zomboid!
 
