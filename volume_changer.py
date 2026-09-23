@@ -187,14 +187,14 @@ default_path = get_zomboid_workshop_path()
 if default_path != "/":
     folder_entry.insert(0, default_path)
 
-tk.Label(root, text="Physical File Loudness (-45 Quiet | -27 Normal | -12 Loud):", bg=BG_COLOR, fg="#f39c12", font=("Arial", 9, "bold")).pack(pady=(15, 2))
+tk.Label(root, text="Physical File Loudness (-45 Quiet | -28 Normal | -12 Loud):", bg=BG_COLOR, fg="#f39c12", font=("Arial", 9, "bold")).pack(pady=(15, 2))
 vol_slider = tk.Scale(root, from_=-45, to=-12, resolution=1, orient=tk.HORIZONTAL, bg=BG_COLOR, fg=FG_COLOR, highlightthickness=0, length=300)
-vol_slider.set(-27)
+vol_slider.set(-28)
 vol_slider.pack(pady=5)
 
 tk.Label(root, text="Note: Processing takes less than 30 seconds depending on the audio files.", bg=BG_COLOR, fg="#aaaaaa", font=("Arial", 8, "italic")).pack(pady=2)
 
-# UPDATED TIP TEXT HERE
+# TIP TEXT
 tk.Label(root, text="Tip: Click 'Open Folder' to test the audio in Windows before launching the game!", bg=BG_COLOR, fg="#3498db", font=("Arial", 8, "bold")).pack(pady=(5, 0))
 
 action_frame = tk.Frame(root, bg=BG_COLOR)
